@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+input {
+  line-height: normal;
+}
+button {
+  cursor: pointer;
+}
+body {
+  padding: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 400px;
+
+  background-color: black;
+  color: white;
+  padding: 25px;
+  position: relative;
+}
+
+.boxed {
+  width: 100px;
+  height: 100px;
+  background-color: #6a5af9;
+
+  
+  top: 100px;
+  /* center with tag inline */
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* center with tag inline
+display: inline-block;
+position: relative;
+left: 50%;
+transform: translateX(-50%); */
+
+/* position absolute căn chỉnh theo thẻ cha gần nhất có 
+thuộc tính position*/
+.boxed2 {
+  width: 100px;
+  height: 100px;
+  background-color: #1873d5;
+  position: absolute;
+}
+
+.boxed21 {
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.boxed22 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown {
+  width: 300px;
+  font-size: 18px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.dropdown-select {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border: 1px solid #1873d5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-list {
+  border: 1px solid #1873d5; 
+  background-color: white;
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease; 
+  /* transform: translateY(50px);*/
+}
+
+.dropdown-item {
+  padding: 20px;
+  border-bottom: 1px solid #1873d5;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+}
