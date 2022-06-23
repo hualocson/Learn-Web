@@ -45,3 +45,8 @@ body {
     box-shadow: 0 30px 54px -5px rgba(245, 56,56 , 0.35);
   }
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-weight: bold;
+}

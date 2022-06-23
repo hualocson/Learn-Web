@@ -85,6 +85,11 @@ body {
   box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #0b132a;
+  font-weight: bold;
+}
+
 .header {
   padding-top: 50px;
   padding-bottom: 90px;
@@ -148,6 +153,37 @@ body {
 }
 .hero-desc strong {
   font-weight: 500;
+}
+
+.intro {
+  margin-bottom: 95px;
+}
+.intro-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 37px 0;
+  box-shadow: 0 42px 114px 0 rgba(13, 16, 37, 0.06);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.intro-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 36.5px;
+  font-size: 20px;
+}
+.intro-item:nth-child(2) {
+  border-left: 2px solid #eeeef2;
+  border-right: 2px solid #eeeef2;
+}
+.intro-title {
+  font-size: 25px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+.intro-text {
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=app.css.map */
