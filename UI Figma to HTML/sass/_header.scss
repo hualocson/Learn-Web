@@ -21,24 +21,11 @@
   }
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 0 40px;
-  // &-item + .menu-item {
-  //   margin-left: 40px;
-  // }
-  &-link {
-    color: inherit;
-  }
-}
-
 @media screen and (max-width: 1023px) {
-  .menu {
-    display: none;
-  }
   .header {
     padding: 25px 0 50px;
+  }
+  .header-auth {
+    display: none;
   }
 }
